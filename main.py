@@ -33,9 +33,9 @@ def difficulty(difficulty):
       elif attempts_hard == 0:
         print("You 've run out of guesses. You lose")
       elif guess > guess_the_number:
-        print("Too high")
+        print("Too high, guess again!")
       elif guess < guess_the_number:
-        print("Too low")
+        print("Too low, guess again!")
   elif difficulty == "easy":
     global attempts_easy
     while attempts_easy != 0:
@@ -47,9 +47,9 @@ def difficulty(difficulty):
       elif attempts_hard == 0:
         print("You 've run out of guesses. You lose")
       elif guess > guess_the_number:
-        print("Too high")
+        print("Too high, guess again!")
       elif guess < guess_the_number:
-        print("Too low")
+        print("Too low, guess again!")
       
       
 difficulty(input("Choose a difficulty. Type 'easy' or 'hard': "))
